@@ -279,13 +279,13 @@ hr{
 
 
     /* style for blog */
-    .blog-heading{
-        margin-left: 20px;
+    .top-blog{
+        padding: 0px 20px;
     }
     .blog{
         flex-direction: column;
         margin: 0 auto;
-        width: 350px;
+        width: 330px;
         margin-bottom: 25px;
     }
     .blog .thumbnail img{
