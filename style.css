@@ -215,6 +215,12 @@ hr{
     .top-players h2{
         padding-top: 20px;
     }
+    .top-players{
+        padding: 0px 20px;
+    }
+    .player-wrapper{
+        margin-left: 20px;
+    }
     .player-wrapper, .blog-wrapper{
         grid-template-columns: repeat(1, 1fr);
 
@@ -227,9 +233,6 @@ hr{
     .top-blog{
         padding: 0px 20px;
     }
-
-
-
 
 
 
