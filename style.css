@@ -208,18 +208,19 @@ hr{
     .container{
         width: 100%;
         padding: 0px;
+        margin-top: 0px;
     }
 
     /* style for players */
     .top-players h2{
-        margin-left: 20px;
+        padding-top: 20px;
     }
     .player-wrapper, .blog-wrapper{
         grid-template-columns: repeat(1, 1fr);
 
     }
     .player{
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     /* style for blog */
