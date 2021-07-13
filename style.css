@@ -1,0 +1,242 @@
+/*------------------------------------*/
+/*poppin google font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*------------------------------------*/
+
+/* common styles start */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+.container{
+    background-color: white;
+    width: 870px;
+    margin: 0 auto;
+    padding: 30px 35px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+}
+:root {
+    --heading: #562EFF;
+}
+/* common styles end */
+
+
+
+
+
+/* ------------------------*/
+/* top players styel */
+/*--------------------------*/
+
+.section-title{
+    font-size: 24px;
+    margin-top: 0px;
+    font-weight: 500;
+    color: var(--heading);
+}
+.player-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player h3{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+
+
+
+/* ------------------------*/
+/* top blogs styel */
+/*--------------------------*/
+
+.blog-heading{
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--heading);
+    margin-top: 30px;
+}
+.blog-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 18px;
+}
+.blog{
+    display: flex;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog .blog-info{
+    margin-left: 16px;
+}
+.blog .blog-info h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+.blog .blog-info p{
+    margin: 0px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9F9F9F;
+}
+.blog .blog-info p a{
+    text-decoration: none;
+    color:  var(--heading);
+    font-weight: normal;
+}
+
+
+
+
+
+/* ------------------------*/
+/* Latest Course section */
+/*--------------------------*/
+
+.course-title{
+    color: var(--heading);
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+.course-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.09));
+}
+.course{
+    width: 252px;
+    border-radius: 8px;
+    padding: 10px 0px;
+    border: 1px solid #efefef;
+}
+.course-banner{
+    text-align: center;
+}
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-description {
+    padding: 0px 10px;
+}
+
+
+
+/* Description part is start */
+.course-description h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+.course-description p{
+    font-size: 15px;
+    color: #ED6B4F;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* course info part/rating */
+.course-info{
+    display: flex;
+    margin-top: 20px;
+}
+.course-info .rating{
+    font-size: 11px;
+}
+.course-info .rating .filled{
+    color: #FFC014;
+}
+.course-info .rating .empty{
+    color: #AEAEAE;
+    opacity: 0.25;
+}
+.course-info span{
+    font-size: 12px;
+    margin: 0px 15px;
+}
+.course-info .time{
+    font-size: 14px;
+    margin-top: -3px;
+    background-color: #FFE4E8;
+    padding: 3px 8px;
+    border-radius: 15px;
+    color: #FF4A60;
+    font-weight: 600;
+}
+.course-info time i{
+    font-size: 12px;
+}
+
+
+
+
+/* ------------------------------------------ */
+    /* <!-- Added Medea quaries --> */
+/* ------------------------------------------ */
+
+/* Mobile device */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+        padding: 0px;
+    }
+
+    /* style for players */
+    .top-players h2{
+        margin-left: 20px;
+    }
+    .player-wrapper, .blog-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .player{
+        flex-direction: column;
+    }
+
+    /* style for blog */
+    .top-blog{
+        padding: 0px 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .section-2{
+        display: none;
+    }
+}
